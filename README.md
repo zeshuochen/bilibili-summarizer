@@ -1,0 +1,56 @@
+# bilibili-summarizer
+
+A Claude Code skill that summarizes Bilibili videos and saves structured notes.
+
+## What it does
+
+1. Opens the Bilibili video in Chrome via browser automation
+2. Extracts title, uploader, description, and chapter markers
+3. Downloads subtitles with yt-dlp (if available)
+4. Summarizes the content and saves a Markdown note
+
+## Requirements
+
+- [Claude Code](https://claude.ai/code)
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) installed and on PATH
+- Claude in Chrome browser extension (for page text extraction)
+
+## Installation
+
+Copy `skills/bilibili-summarizer/SKILL.md` to your Claude skills directory:
+
+```
+~/.claude/skills/bilibili-summarizer/SKILL.md
+```
+
+Then edit the `SAVE_PATH` in the skill file to point to your notes folder.
+
+## Usage
+
+Share a Bilibili link in your Claude Code session:
+
+```
+总结这个视频：https://www.bilibili.com/video/BV...
+```
+
+Claude will summarize the video and save a note to your configured folder.
+
+## Note format
+
+```markdown
+# [视频标题]
+
+> **UP主**: ... | **时长**: ... | **发布时间**: ...
+
+## 核心内容
+...
+
+## 主要观点
+- ...
+
+## 详细笔记
+...
+
+## 来源
+- [标题](url)
+```
