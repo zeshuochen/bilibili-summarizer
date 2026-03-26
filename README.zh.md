@@ -35,7 +35,11 @@
 
 ## 使用
 
-在 agent 会话中分享 B 站链接：
+分享 B 站链接，让 agent 总结视频：
+
+```
+https://www.bilibili.com/video/BV...   summarize
+```
 
 ```
 总结这个视频：https://www.bilibili.com/video/BV...

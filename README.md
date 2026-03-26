@@ -35,13 +35,17 @@ Then edit the `SAVE_PATH` in the skill file to point to your notes folder.
 
 ## Usage
 
-Share a Bilibili link in your Claude Code session:
+Share a Bilibili link and ask your agent to summarize it:
+
+```
+https://www.bilibili.com/video/BV...   summarize
+```
 
 ```
 总结这个视频：https://www.bilibili.com/video/BV...
 ```
 
-Claude will summarize the video and save a note to your configured folder.
+The agent will summarize the video and save a note to your configured folder.
 
 ## Note format
 
