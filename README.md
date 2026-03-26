@@ -35,7 +35,13 @@ Then edit the `SAVE_PATH` in the skill file to point to your notes folder.
 
 ## Usage
 
-Share a Bilibili link and ask your agent to summarize it:
+After installation, the skill is available as a slash command:
+
+```
+/bilibili-summarizer
+```
+
+Or share a link directly:
 
 ```
 https://www.bilibili.com/video/BV...   summarize

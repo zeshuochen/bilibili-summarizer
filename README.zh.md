@@ -35,7 +35,13 @@
 
 ## 使用
 
-分享 B 站链接，让 agent 总结视频：
+安装后，skill 可作为 slash command 直接调用：
+
+```
+/bilibili-summarizer
+```
+
+或直接分享链接：
 
 ```
 https://www.bilibili.com/video/BV...   summarize
