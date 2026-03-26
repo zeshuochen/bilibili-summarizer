@@ -55,6 +55,11 @@ yt-dlp --cookies-from-browser chrome \
 
 If a `.srt` file is created (e.g. `/tmp/bili_<id>.zh-Hans.srt`), read it and proceed to **Step 3**.
 
+**⚠️ Chrome locks its cookie database while running — yt-dlp cannot read it.** Workarounds (in order of preference):
+1. Close Chrome and retry (simplest)
+2. Use `--cookies-from-browser edge` or `--cookies-from-browser firefox` (if logged into Bilibili there)
+3. Export cookies manually via a browser extension and use `--cookies cookies.txt`
+
 ---
 
 #### Option B: Bilibili AI summary API (if Option A yields no subtitles)
