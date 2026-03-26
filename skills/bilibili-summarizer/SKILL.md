@@ -13,8 +13,8 @@ Fetch a Bilibili video's content via subtitles, Bilibili's AI summary API, or au
 Edit before first use:
 
 ```
-SAVE_PATH=C:\Users\you\Notes          # absolute path to the folder where notes will be saved
-COOKIES_PATH=C:\Users\you\bili_cookies.txt  # path to your Bilibili cookies file (Netscape format)
+SAVE_PATH=     # absolute path to the folder where notes will be saved
+COOKIES_PATH=  # absolute path to your Bilibili cookies file (Netscape format)
 ```
 
 ## Workflow
@@ -70,17 +70,10 @@ Bilibili provides AI-generated summaries for many videos via an API:
 
 ```bash
 python -c "
-import subprocess, json, urllib.request, http.cookiejar
+import json, urllib.request, http.cookiejar
 
-# Export browser cookies
-subprocess.run([
-    'yt-dlp', '--cookies-from-browser', 'chrome',
-    '--cookies', '/tmp/bili_cookies.txt',
-    '--skip-download', '--quiet', '<url>'
-], capture_output=True)
-
-# Load cookies
-cj = http.cookiejar.MozillaCookieJar('/tmp/bili_cookies.txt')
+# Load cookies from COOKIES_PATH
+cj = http.cookiejar.MozillaCookieJar('<COOKIES_PATH>')
 try:
     cj.load(ignore_discard=True, ignore_expires=True)
 except:
@@ -161,5 +154,5 @@ Save to `<SAVE_PATH>/<video title>.md`:
 
 - Strip illegal filename characters: `\ / : * ? " < > |`
 - If chapters exist, use them as section headings in Detailed Notes
-- Option A covers most users already logged into Bilibili in Chrome
+- Option A requires a valid cookies file — re-export if subtitles fail unexpectedly
 - Option C is slow — always run in background and inform the user
