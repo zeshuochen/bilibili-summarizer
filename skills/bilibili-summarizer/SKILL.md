@@ -1,7 +1,7 @@
 ---
 name: bilibili-summarizer
 description: Use when the user shares a Bilibili video link and asks to summarize or save notes about the video.
-allowed-tools: Bash, Write, mcp__claude-in-chrome__tabs_context_mcp, mcp__claude-in-chrome__tabs_create_mcp, mcp__claude-in-chrome__navigate, mcp__claude-in-chrome__get_page_text, mcp__claude-in-chrome__read_page
+allowed-tools: Bash, Write
 ---
 
 # Bilibili Video Summarizer

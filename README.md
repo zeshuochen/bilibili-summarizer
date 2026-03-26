@@ -16,7 +16,7 @@
 ## Requirements
 
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) installed and on PATH
-- Claude in Chrome browser extension (for page text extraction)
+- A Bilibili cookies file (see Installation)
 
 ## Installation
 
@@ -34,11 +34,11 @@ Clone this repo and copy the `skills/` directory to your agent's skills path.
 Then edit the two config values in the skill file:
 
 ```
-SAVE_PATH=C:\Users\you\Notes          # folder where notes will be saved
-COOKIES_PATH=C:\Users\you\bili_cookies.txt  # your Bilibili cookies file
+SAVE_PATH=     # absolute path to the folder where notes will be saved
+COOKIES_PATH=  # absolute path to your Bilibili cookies file (Netscape format)
 ```
 
-To get your cookies file: install the **[Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc)** browser extension, open any Bilibili page while logged in, and export — save the file to `COOKIES_PATH`.
+To get your cookies file: install the **[Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc)** browser extension, open any Bilibili page while logged in, and export — save the file to your `COOKIES_PATH`.
 
 ## Usage
 

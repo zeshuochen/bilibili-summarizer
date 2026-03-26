@@ -16,7 +16,7 @@
 ## 依赖
 
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) 已安装并在 PATH 中
-- Claude in Chrome 浏览器扩展（用于提取页面内容）
+- B站 cookies 文件（见安装步骤）
 
 ## 安装
 
@@ -34,11 +34,11 @@
 然后编辑 skill 文件中的两个配置项：
 
 ```
-SAVE_PATH=C:\Users\you\Notes          # 笔记保存文件夹
-COOKIES_PATH=C:\Users\you\bili_cookies.txt  # B站 cookies 文件路径
+SAVE_PATH=     # 笔记保存文件夹的绝对路径
+COOKIES_PATH=  # B站 cookies 文件的绝对路径（Netscape 格式）
 ```
 
-获取 cookies 文件：安装 **[Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc)** 浏览器扩展，在登录状态下打开任意 B站页面导出，保存到 `COOKIES_PATH` 路径。
+获取 cookies 文件：安装 **[Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc)** 浏览器扩展，在登录状态下打开任意 B站页面导出，保存到你的 `COOKIES_PATH`。
 
 ## 使用
 
