@@ -4,6 +4,8 @@
 
 > Follows the [Agent Skills specification](https://agentskills.io/specification) — works with Claude Code, Codex CLI, and any skills-compatible agent.
 
+[中文](README.zh.md)
+
 ## What it does
 
 1. Opens the Bilibili video in Chrome via browser automation
