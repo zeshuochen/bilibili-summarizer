@@ -20,11 +20,16 @@
 
 ## 安装
 
-将 `skills/bilibili-summarizer/SKILL.md` 复制到你的 agent skills 目录：
+### Claude Code
 
 ```
-~/.claude/skills/bilibili-summarizer/SKILL.md
+/plugin marketplace add zeshuochen/bilibili-summarizer
+/plugin install bilibili@bilibili-summarizer
 ```
+
+### 手动安装
+
+克隆此仓库，将 `skills/` 目录复制到你的 agent 的 skills 路径下。
 
 然后编辑 skill 文件中的 `SAVE_PATH`，指向你的笔记保存文件夹。
 

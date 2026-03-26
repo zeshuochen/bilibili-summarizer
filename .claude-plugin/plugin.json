@@ -1,0 +1,17 @@
+{
+  "name": "bilibili",
+  "version": "1.0.0",
+  "description": "Agent Skill for summarizing Bilibili videos and saving structured notes.",
+  "author": {
+    "name": "zeshuochen"
+  },
+  "repository": "https://github.com/zeshuochen/bilibili-summarizer",
+  "license": "MIT",
+  "keywords": [
+    "bilibili",
+    "video",
+    "summarizer",
+    "notes",
+    "obsidian"
+  ]
+}

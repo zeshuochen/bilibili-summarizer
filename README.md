@@ -20,11 +20,16 @@
 
 ## Installation
 
-Copy `skills/bilibili-summarizer/SKILL.md` to your Claude skills directory:
+### Claude Code
 
 ```
-~/.claude/skills/bilibili-summarizer/SKILL.md
+/plugin marketplace add zeshuochen/bilibili-summarizer
+/plugin install bilibili@bilibili-summarizer
 ```
+
+### Manual
+
+Clone this repo and copy the `skills/` directory to your agent's skills path.
 
 Then edit the `SAVE_PATH` in the skill file to point to your notes folder.
 

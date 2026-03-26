@@ -1,0 +1,14 @@
+{
+  "name": "bilibili-summarizer",
+  "owner": {
+    "name": "zeshuochen"
+  },
+  "plugins": [
+    {
+      "name": "bilibili",
+      "source": "./",
+      "description": "Agent Skill for summarizing Bilibili videos and saving structured notes.",
+      "version": "1.0.0"
+    }
+  ]
+}
