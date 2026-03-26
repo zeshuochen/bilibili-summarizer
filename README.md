@@ -1,6 +1,8 @@
 # bilibili-summarizer
 
-A Claude Code skill that summarizes Bilibili videos and saves structured notes.
+**Agent Skill for summarizing Bilibili videos and saving structured notes.**
+
+> Follows the [Agent Skills specification](https://agentskills.io/specification) — works with Claude Code, Codex CLI, and any skills-compatible agent.
 
 ## What it does
 
@@ -11,7 +13,6 @@ A Claude Code skill that summarizes Bilibili videos and saves structured notes.
 
 ## Requirements
 
-- [Claude Code](https://claude.ai/code)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) installed and on PATH
 - Claude in Chrome browser extension (for page text extraction)
 
