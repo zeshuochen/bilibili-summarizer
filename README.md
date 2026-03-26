@@ -8,10 +8,9 @@
 
 ## What it does
 
-1. Opens the Bilibili video in Chrome via browser automation
-2. Extracts title, uploader, description, and chapter markers
-3. Downloads subtitles with yt-dlp (if available)
-4. Summarizes the content and saves a Markdown note
+1. Fetches video metadata (title, uploader, duration, chapters) via yt-dlp
+2. Downloads subtitles using a Bilibili cookies file — falls back to the AI summary API, then audio transcription if unavailable
+3. Summarizes the content and saves a structured Markdown note
 
 ## Requirements
 
