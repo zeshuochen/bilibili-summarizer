@@ -31,7 +31,14 @@
 
 克隆此仓库，将 `skills/` 目录复制到你的 agent 的 skills 路径下。
 
-然后编辑 skill 文件中的 `SAVE_PATH`，指向你的笔记保存文件夹。
+然后编辑 skill 文件中的两个配置项：
+
+```
+SAVE_PATH=C:\Users\you\Notes          # 笔记保存文件夹
+COOKIES_PATH=C:\Users\you\bili_cookies.txt  # B站 cookies 文件路径
+```
+
+获取 cookies 文件：安装 **[Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc)** 浏览器扩展，在登录状态下打开任意 B站页面导出，保存到 `COOKIES_PATH` 路径。
 
 ## 使用
 

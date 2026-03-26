@@ -31,7 +31,14 @@
 
 Clone this repo and copy the `skills/` directory to your agent's skills path.
 
-Then edit the `SAVE_PATH` in the skill file to point to your notes folder.
+Then edit the two config values in the skill file:
+
+```
+SAVE_PATH=C:\Users\you\Notes          # folder where notes will be saved
+COOKIES_PATH=C:\Users\you\bili_cookies.txt  # your Bilibili cookies file
+```
+
+To get your cookies file: install the **[Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc)** browser extension, open any Bilibili page while logged in, and export — save the file to `COOKIES_PATH`.
 
 ## Usage
 

@@ -13,7 +13,8 @@ Fetch a Bilibili video's content via subtitles, Bilibili's AI summary API, or au
 Edit before first use:
 
 ```
-SAVE_PATH=C:\Users\you\Notes     # absolute path to the folder where notes will be saved
+SAVE_PATH=C:\Users\you\Notes          # absolute path to the folder where notes will be saved
+COOKIES_PATH=C:\Users\you\bili_cookies.txt  # path to your Bilibili cookies file (Netscape format)
 ```
 
 ## Workflow
@@ -42,10 +43,14 @@ print('cid:', d['data']['cid'], 'mid:', d['data']['owner']['mid'])
 
 ### Step 2 — Fetch content (try in order)
 
-#### Option A: yt-dlp + browser cookies — subtitles (best)
+#### Option A: yt-dlp + cookies file — subtitles (best)
+
+Set `COOKIES_PATH` to wherever you save your Bilibili cookies file (see Configuration above).
+
+Export cookies from your browser using an extension such as **Get cookies.txt LOCALLY** while on any Bilibili page, and save the file to `COOKIES_PATH`.
 
 ```bash
-yt-dlp --cookies-from-browser chrome \
+yt-dlp --cookies "<COOKIES_PATH>" \
   --skip-download --write-subs --write-auto-subs \
   --sub-lang "zh-Hans,zh-CN,zh,ai-zh,ai-zh-Hans,en" \
   --convert-subs srt \
@@ -55,10 +60,7 @@ yt-dlp --cookies-from-browser chrome \
 
 If a `.srt` file is created (e.g. `/tmp/bili_<id>.zh-Hans.srt`), read it and proceed to **Step 3**.
 
-**⚠️ Chrome locks its cookie database while running — yt-dlp cannot read it.** Workarounds (in order of preference):
-1. Close Chrome and retry (simplest)
-2. Use `--cookies-from-browser edge` or `--cookies-from-browser firefox` (if logged into Bilibili there)
-3. Export cookies manually via a browser extension and use `--cookies cookies.txt`
+If the cookies file is missing or expired, prompt the user to re-export it.
 
 ---
 
